@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: pink;
+}
+h2{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+    background-color: rgb(15, 14, 49);
+}
+.options{
+    display: flex;
+    justify-content:center;
+    margin-top: 4%;
+}
+.option img{
+    width: 130px;
+    height: auto;
+    border-radius: 50%;
+    padding: 10px;
+    
+}
+img:hover{
+    opacity: 80%;
+    cursor: pointer;
+}
+
+.score-board{
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    margin-top: 3%;
+    gap: 7rem;
+    font-size: 2rem;
+}
+#you, #comp{
+    font-size: 3rem;
+}
+.result{
+    font-size: 1.7rem;
+    text-align: center;
+    margin-top: 5%;
+}
+#msg{
+    padding: 12px 40px;
+    background-color: rgb(21, 19, 54);
+     display: inline; /*set line width according to the  length of message */
+     color: aliceblue;
+     border-radius: 1rem;
+}
+
+@media screen and (max-width: 460px){
+    .result{
+        font-size: 1.7rem;
+        text-align: center;
+        margin-top: 5%;
+    }
+    .option img{
+        width: 100px;
+        height: auto;
+        border-radius: 50%;
+        padding: 10px;
+        
+    }
+    .score-board{
+        display: flex;
+        justify-content:center;
+        text-align: center;
+        margin-top: 1%;
+        gap: 7rem;
+        font-size: 1.5rem;
+    }
+    .result{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    #msg{
+        padding: 10px 30px;
+    }
+  }
+  @media screen and (max-width: 377px){
+    .result{
+        font-size: 1.2rem;
+    }
+    h2{
+        font-size: 30px;
+    }
+    .options{
+        margin-top: 10%;
+    }
+  }
